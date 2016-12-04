@@ -30,7 +30,7 @@ function arraysEqual(a, b) {
   return true;
 }
 
-const makeConstraint = f => class Test extends Constraint {
+const makeConstraint = f => class GenericConstraint extends Constraint {
   static AttributeMapping = f.prototype.AttributeMapping;
 
   getProposal(tripleIndex, proposed, prefix) {
